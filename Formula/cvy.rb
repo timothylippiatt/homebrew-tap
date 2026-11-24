@@ -5,21 +5,21 @@
 class Cvy < Formula
   desc "Provision coordinated Claude Code sessions across multiple repos"
   homepage "https://github.com/timothylippiatt/convoy"
-  version "0.2.1"
+  version "0.3.0"
   license "GPL-3.0-or-later"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/timothylippiatt/convoy/releases/download/v0.2.1/convoy_0.2.1_darwin_amd64.tar.gz"
-      sha256 "d3b0f5187ecebafb797f65aeeac2ec0d0bc72d5aad4c12b44dffe597af4cf9f3"
+      url "https://github.com/timothylippiatt/convoy/releases/download/v0.3.0/convoy_0.3.0_darwin_amd64.tar.gz"
+      sha256 "76db4a0b0b3d2430decc4f744ecc5faa88f24fa1c960eb17efed118f73d4123e"
 
       define_method(:install) do
         bin.install "cvy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/timothylippiatt/convoy/releases/download/v0.2.1/convoy_0.2.1_darwin_arm64.tar.gz"
-      sha256 "59a92a11dcc51e7328bd9888eee26753a9a37c73c48270c9a83897b5a501f481"
+      url "https://github.com/timothylippiatt/convoy/releases/download/v0.3.0/convoy_0.3.0_darwin_arm64.tar.gz"
+      sha256 "995a9ab85f95de3ed09bada44e3aef933256b747f3a763f6982eba85d1fd2fc7"
 
       define_method(:install) do
         bin.install "cvy"
@@ -29,15 +29,15 @@ class Cvy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/timothylippiatt/convoy/releases/download/v0.2.1/convoy_0.2.1_linux_amd64.tar.gz"
-      sha256 "667ee07a32ce403f55388ebba8ff548ecd4008b6233f5b40d8f3771697431026"
+      url "https://github.com/timothylippiatt/convoy/releases/download/v0.3.0/convoy_0.3.0_linux_amd64.tar.gz"
+      sha256 "54cf1f752738502d0dc0a08e5fcd4c6b37d3d7fee017fdfcab467a24fb0bb86a"
       define_method(:install) do
         bin.install "cvy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/timothylippiatt/convoy/releases/download/v0.2.1/convoy_0.2.1_linux_arm64.tar.gz"
-      sha256 "7fccddf0cd6bc2db63916b395642b498fddb911342321e729317b47269c17231"
+      url "https://github.com/timothylippiatt/convoy/releases/download/v0.3.0/convoy_0.3.0_linux_arm64.tar.gz"
+      sha256 "214c1436ddc1c3f68da671e474da0138d37f757564e1c8a1333c863155ebf470"
       define_method(:install) do
         bin.install "cvy"
       end
